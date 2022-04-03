@@ -23,5 +23,11 @@ Unduh dan buka file Tucil-3-Stima-15-Puzzle.jar di dalam folder bin
 8. Buka menu Build > pilih Build Artifacts... dan pilih Build
 9. Buka file executable .jar di folder tujuan
 
+## Cara Menggunakan Program
+- Tekan tombol Import untuk memilih file teks yang berisi konfigurasi puzzle
+- Tekan tombol Randomize untuk membangkitkan konfigurasi puzzle secara acak
+- Tekan tombol Solve untuk memulai pencarian solusi puzzle dan menjalankan animasi langkah penyelesaian puzzle
+- Tekan tombol Reset untuk mengembalikan posisi angka ke konfigurasi semula
+
 ## Pembuat Program
 Ignasius Ferry Priguna (13520126)
