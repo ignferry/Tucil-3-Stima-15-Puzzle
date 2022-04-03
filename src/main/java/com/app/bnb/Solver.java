@@ -60,20 +60,18 @@ public class Solver {
                     pq.removeIf(n -> n.getCost() > this.solution.getCost());
 
                     this.solution = currentNode;
+                    break;
                 }
                 else {
                     // Tambahkan node baru ke antrian
                     List<Character> possibleMoves = new ArrayList<>(currentNode.possibleMoves());
                     for (Character move : possibleMoves) {
                         Node newNode = new Node(currentNode, move);
-                        if (newNode.getCost() < this.solution.getCost()) {
-                            pq.add(new Node(currentNode, move));
-                            totalNodesCreated++;
-                        }
+                        pq.add(new Node(currentNode, move));
+                        totalNodesCreated++;
                     }
                 }
             }
-
         }
 
         // Hentikan perhitungan waktu
