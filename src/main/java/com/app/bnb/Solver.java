@@ -56,9 +56,6 @@ public class Solver {
                 Node currentNode = pq.poll();
 
                 if (currentNode.isSolution()) {
-                    // Hapus node dalam antrian yang costnya lebih besar dari solution baru
-                    pq.removeIf(n -> n.getCost() > this.solution.getCost());
-
                     this.solution = currentNode;
                     break;
                 }
